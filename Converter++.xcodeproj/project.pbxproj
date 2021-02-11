@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		FD2F4D7325D5790C00EE23CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2F4D7225D5790C00EE23CF /* AppDelegate.swift */; };
 		FD2F4D7525D5790C00EE23CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2F4D7425D5790C00EE23CF /* SceneDelegate.swift */; };
-		FD2F4D7725D5790C00EE23CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2F4D7625D5790C00EE23CF /* ViewController.swift */; };
+		FD2F4D7725D5790C00EE23CF /* DayFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2F4D7625D5790C00EE23CF /* DayFinderViewController.swift */; };
 		FD2F4D7A25D5790C00EE23CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2F4D7825D5790C00EE23CF /* Main.storyboard */; };
 		FD2F4D7C25D5790E00EE23CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD2F4D7B25D5790E00EE23CF /* Assets.xcassets */; };
 		FD2F4D7F25D5790E00EE23CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2F4D7D25D5790E00EE23CF /* LaunchScreen.storyboard */; };
+		FD2F4D8F25D57D0E00EE23CF /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2F4D8E25D57D0E00EE23CF /* TempViewController.swift */; };
+		FD2F4D9225D581B500EE23CF /* AppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2F4D9125D581B500EE23CF /* AppearanceViewController.swift */; };
+		FD2F4D9525D581CD00EE23CF /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2F4D9425D581CD00EE23CF /* AppInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD2F4D6F25D5790C00EE23CF /* Converter++.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Converter++.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2F4D7225D5790C00EE23CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD2F4D7425D5790C00EE23CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD2F4D7625D5790C00EE23CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD2F4D7625D5790C00EE23CF /* DayFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFinderViewController.swift; sourceTree = "<group>"; };
 		FD2F4D7925D5790C00EE23CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD2F4D7B25D5790E00EE23CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD2F4D7E25D5790E00EE23CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD2F4D8025D5790E00EE23CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2F4D8E25D57D0E00EE23CF /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
+		FD2F4D9125D581B500EE23CF /* AppearanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceViewController.swift; sourceTree = "<group>"; };
+		FD2F4D9425D581CD00EE23CF /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		FD2F4D7125D5790C00EE23CF /* Converter++ */ = {
 			isa = PBXGroup;
 			children = (
-				FD2F4D7225D5790C00EE23CF /* AppDelegate.swift */,
-				FD2F4D7425D5790C00EE23CF /* SceneDelegate.swift */,
-				FD2F4D7625D5790C00EE23CF /* ViewController.swift */,
-				FD2F4D7825D5790C00EE23CF /* Main.storyboard */,
+				FD2F4D8825D57CA200EE23CF /* AppDelegate */,
+				FD2F4D8A25D57CAD00EE23CF /* Controller */,
+				FD2F4D8B25D57CB700EE23CF /* Views */,
 				FD2F4D7B25D5790E00EE23CF /* Assets.xcassets */,
-				FD2F4D7D25D5790E00EE23CF /* LaunchScreen.storyboard */,
 				FD2F4D8025D5790E00EE23CF /* Info.plist */,
 			);
 			path = "Converter++";
+			sourceTree = "<group>";
+		};
+		FD2F4D8825D57CA200EE23CF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FD2F4D7225D5790C00EE23CF /* AppDelegate.swift */,
+				FD2F4D7425D5790C00EE23CF /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FD2F4D8A25D57CAD00EE23CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD2F4D7625D5790C00EE23CF /* DayFinderViewController.swift */,
+				FD2F4D8E25D57D0E00EE23CF /* TempViewController.swift */,
+				FD2F4D9125D581B500EE23CF /* AppearanceViewController.swift */,
+				FD2F4D9425D581CD00EE23CF /* AppInfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD2F4D8B25D57CB700EE23CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD2F4D7825D5790C00EE23CF /* Main.storyboard */,
+				FD2F4D7D25D5790E00EE23CF /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD2F4D7725D5790C00EE23CF /* ViewController.swift in Sources */,
+				FD2F4D8F25D57D0E00EE23CF /* TempViewController.swift in Sources */,
+				FD2F4D7725D5790C00EE23CF /* DayFinderViewController.swift in Sources */,
+				FD2F4D9225D581B500EE23CF /* AppearanceViewController.swift in Sources */,
 				FD2F4D7325D5790C00EE23CF /* AppDelegate.swift in Sources */,
+				FD2F4D9525D581CD00EE23CF /* AppInfoViewController.swift in Sources */,
 				FD2F4D7525D5790C00EE23CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.accenture.Converter--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.accenture.Converter--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
